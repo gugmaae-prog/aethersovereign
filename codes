@@ -1,0 +1,2775 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html -->
+<html lang="en" style="--bg-r: 241; --bg-g: 235; --bg-b: 226; --fg-r: 13; --fg-g: 12; --fg-b: 10; --accent-r: 177; --accent-g: 150; --accent-b: 106; --orb-x: 50%; --orb-y: 20%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+<title>AetherSovereign · Sovereign Infrastructure Ecosystems</title>
+<meta content="AetherSovereign designs sovereign infrastructure ecosystems integrating zero-emission industrial technologies, decentralized digital assets, and institutional longevity medicine aligned with the UAE Net Zero 2050 Agenda." name="description">
+<meta content="#F2EDE4" name="theme-color">
+<link href="https://fonts.googleapis.com/" rel="preconnect">
+<link href="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:    #0C0B09;
+    --paper:  #F2EDE4;
+    --warm:   #B49A6E;
+    --muted:  #8A8278;
+    --rule:   rgba(12,11,9,0.12);
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', sans-serif;
+    --bg-r: 242; --bg-g: 237; --bg-b: 228;
+    --fg-r: 12;  --fg-g: 11;  --fg-b: 9;
+    --accent-r: 180; --accent-g: 154; --accent-b: 110;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: rgb(var(--bg-r), var(--bg-g), var(--bg-b));
+    color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.06s linear, color 0.06s linear;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(
+      ellipse 80% 60% at var(--orb-x, 50%) var(--orb-y, 30%),
+      rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.07) 0%,
+      transparent 70%
+    );
+    transition: opacity 1.2s ease;
+  }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 60px;
+    opacity: 0;
+    animation: fadeIn 1s 0.3s forwards;
+  }
+
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.6s ease, opacity 0.3s;
+  }
+  .wordmark:hover { opacity: 0.6; }
+  .wordmark-sep {
+    display: inline-block;
+    width: 20px;
+    height: 0.5px;
+    background: currentColor;
+    opacity: 0.4;
+    vertical-align: middle;
+    margin: 0 10px;
+    transform: translateY(-1px);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  .nav-links a:hover { opacity: 1; }
+
+  /* ─── HERO ────────────────────────────────────────── */
+  #hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 60px;
+  }
+  #hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.1) 0%,
+      rgba(0,0,0,0.0) 35%,
+      rgba(0,0,0,0.45) 75%,
+      rgb(var(--bg-r), var(--bg-g), var(--bg-b)) 100%
+    );
+    transition: background 0.06s linear;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 880px;
+    opacity: 0;
+    animation: fadeUp 1.2s 0.8s forwards;
+  }
+  .hero-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255,250,235,0.38);
+    margin-bottom: 32px;
+  }
+  .hero-thesis {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(40px, 5vw, 74px);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: #FFFAEB;
+    margin-bottom: 28px;
+  }
+  .hero-headline {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,250,235,0.38);
+    font-family: var(--sans);
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .hero-headline::before {
+    content: '';
+    display: block;
+    width: 24px; height: 0.5px;
+    background: rgba(180,154,110,0.5);
+    flex-shrink: 0;
+  }
+  .hero-subheadline {
+    max-width: 720px;
+    font-family: var(--sans);
+    font-size: clamp(13px, 1.35vw, 16px);
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(255,250,235,0.72);
+    letter-spacing: 0.01em;
+  }
+
+  /* ─── TRUST STRIP ─────────────────────────────────── */
+  #trust {
+    padding: 36px 60px;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+    transition: border-color 0.6s ease;
+  }
+  .trust-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+  }
+  .trust-icon {
+    width: 28px; height: 28px;
+    opacity: 0.35;
+    flex-shrink: 0;
+  }
+  .trust-text {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .trust-sep {
+    width: 0.5px; height: 28px;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.12);
+    transition: background 0.6s ease;
+  }
+
+  /* ─── AFFILIATIONS ────────────────────────────────── */
+  #affiliations {
+    padding: 52px 60px;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.07);
+    transition: border-color 0.6s ease;
+  }
+  .aff-label {
+    font-size: 8.5px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.28);
+    text-align: center;
+    margin-bottom: 40px;
+    transition: color 0.6s ease;
+  }
+  .aff-track {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 28px;
+  }
+  .aff-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.25;
+    transition: opacity 0.5s ease;
+    flex: 1 1 auto;
+    padding: 0 12px;
+  }
+  .aff-item:hover { opacity: 0.65; }
+  .aff-wordmark {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 14.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    white-space: nowrap;
+    transition: color 0.6s ease;
+    line-height: 1;
+  }
+  .aff-div {
+    width: 0.5px; height: 20px;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    flex-shrink: 0;
+    transition: background 0.6s ease;
+  }
+
+  /* ─── BIO ─────────────────────────────────────────── */
+  #bio {
+    padding: 120px 60px;
+  }
+  .bio-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 100px;
+    align-items: start;
+  }
+  .bio-text-col {}
+  .bio-name {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(52px, 5.5vw, 80px);
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: inherit;
+    margin-bottom: 8px;
+  }
+  .bio-title {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 48px;
+    transition: color 0.6s ease;
+  }
+  .bio-body {
+    font-size: 14.5px;
+    color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    opacity: 0.72;
+    line-height: 1.85;
+    margin-bottom: 28px;
+  }
+  .bio-portrait {
+    position: relative;
+    overflow: hidden;
+  }
+  .bio-portrait img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(14%) contrast(1.05) sepia(5%);
+    transition: filter 0.6s ease;
+  }
+  .bio-portrait:hover img {
+    filter: grayscale(4%) contrast(1.03) sepia(2%);
+  }
+  .bio-portrait-caption {
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ─── PORTFOLIO ───────────────────────────────────── */
+  #portfolio {
+    padding: 0 60px 100px;
+  }
+  .portfolio-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .portfolio-heading-row {
+    display: flex;
+    align-items: baseline;
+    gap: 48px;
+    margin-bottom: 52px;
+    padding-bottom: 28px;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+  }
+  .portfolio-tag {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    white-space: nowrap;
+    transition: color 0.6s ease;
+  }
+  .portfolio-subtitle {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(20px, 2.2vw, 30px);
+    color: inherit;
+    line-height: 1.15;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .portfolio-item {
+    padding: 28px 32px 28px 0;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    transition: opacity 0.3s;
+  }
+  .portfolio-item:nth-child(even) {
+    padding-left: 32px;
+    padding-right: 0;
+    border-left: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+  }
+  .portfolio-item:hover { opacity: 0.7; }
+  .pi-dot {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    flex-shrink: 0;
+    margin-top: 9px;
+    transition: background 0.6s ease;
+  }
+  .pi-text {
+    font-size: 13.5px;
+    color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    line-height: 1.5;
+  }
+
+  /* ─── WHO WE SERVE ────────────────────────────────── */
+  #serve { padding: 100px 60px; }
+  .serve-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .serve-label {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    transition: color 0.6s ease;
+  }
+  .serve-label::before {
+    content: '00';
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+  .serve-heading {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(32px, 3.5vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: inherit;
+  }
+  .serve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .serve-card {
+    padding: 32px 36px;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+    transition: border-color 0.4s, background 0.4s;
+    cursor: default;
+  }
+  .serve-card:hover {
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.03);
+    border-color: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.3);
+  }
+  .serve-card-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 11px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 16px;
+    display: block;
+    transition: color 0.6s ease;
+  }
+  .serve-card-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 300;
+    color: inherit;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .serve-card-body { font-size: 12px; color: var(--muted); line-height: 1.85; }
+
+  /* ─── IMAGE TREATMENT ─────────────────────────────── */
+  .img-harmonized {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(18%) contrast(1.06) sepia(6%);
+    transition: filter 0.6s ease, transform 0.7s ease;
+  }
+  .img-harmonized:hover {
+    filter: grayscale(8%) contrast(1.04) sepia(3%);
+  }
+
+
+
+  /* ─── STRATEGIC PILLARS / COMPLIANCE ─────────────── */
+  #pillars {
+    padding: 110px var(--page-x, 60px) 100px;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+  }
+  .pillar-header {
+    max-width: 860px;
+    margin-bottom: 56px;
+  }
+  .pillar-kicker {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.6s ease;
+  }
+  .pillar-kicker::before {
+    content: '01';
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+  .pillar-lede {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(30px, 3.5vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: inherit;
+    text-wrap: balance;
+  }
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+  }
+  .pillar-card {
+    min-height: 360px;
+    padding: clamp(32px, 4vw, 52px);
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    background:
+      linear-gradient(135deg, rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.025), transparent 58%),
+      rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.018);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 42px;
+    transition: background 0.45s ease, border-color 0.45s ease, transform 0.45s ease;
+  }
+  .pillar-card:hover {
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.045);
+    border-color: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.34);
+    transform: translateY(-2px);
+  }
+  .pillar-index {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    display: block;
+    margin-bottom: 18px;
+    transition: color 0.6s ease;
+  }
+  .pillar-domain {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .pillar-title {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: inherit;
+    text-wrap: balance;
+  }
+  .pillar-body {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+  #compliance {
+    padding: 92px var(--page-x, 60px);
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+  }
+  .compliance-panel {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(36px, 7vw, 86px);
+    align-items: start;
+    padding: clamp(34px, 5vw, 58px) 0;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.12);
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.12);
+  }
+  .compliance-label {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.6s ease;
+  }
+  .compliance-label::before {
+    content: '02';
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+  .compliance-copy {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(28px, 3.2vw, 44px);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    color: inherit;
+    text-wrap: balance;
+  }
+
+  /* ─── SHARED SECTION STYLES ───────────────────────── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 120px 60px;
+  }
+  .container { max-width: 1060px; margin: 0 auto; }
+  hr.rule {
+    border: none;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    margin: 0;
+    transition: border-color 0.6s ease;
+  }
+  .section-tag {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.6s ease;
+  }
+  .section-tag::before {
+    content: attr(data-num);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(38px, 4vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: inherit;
+    transition: color 0.6s ease;
+  }
+
+  /* ─── GENE FRAMEWORK ──────────────────────────────── */
+  #framework { padding-bottom: 0; }
+  .fw-body {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: stretch;
+  }
+  .fw-text {
+    padding: 60px 60px 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .fw-item {
+    padding: 32px 0;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    transition: border-color 0.6s ease;
+  }
+  .fw-item:last-child { border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1); }
+  .fi-label {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 12px;
+    color: var(--muted);
+    padding-top: 3px;
+  }
+  .fi-name {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 300;
+    color: inherit;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .fi-body { font-size: 13px; color: var(--muted); line-height: 1.85; }
+  .fw-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.04);
+    min-height: 420px;
+    transition: background 0.6s ease;
+  }
+  .fw-image img { min-height: 420px; }
+
+  /* ─── GENE PHILOSOPHY ─────────────────────────────── */
+  #gene-philosophy { padding: 100px 60px; }
+  .gene-phil-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .gene-phil-letter {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(100px, 14vw, 200px);
+    line-height: 0.85;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    opacity: 0.14;
+    letter-spacing: -0.06em;
+    user-select: none;
+    transition: opacity 0.4s ease, color 0.6s ease;
+  }
+  .gene-phil-inner:hover .gene-phil-letter { opacity: 0.22; }
+  .gene-phil-text {}
+  .gene-phil-heading {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(28px, 3vw, 44px);
+    line-height: 1.15;
+    color: inherit;
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+  }
+  .gene-phil-body {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 24px;
+  }
+  .gene-phil-list {
+    list-style: none;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    padding-top: 24px;
+    margin-top: 8px;
+  }
+  .gene-phil-list li {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    padding: 10px 0;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.06);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: color 0.6s ease;
+  }
+  .gene-phil-list li::before {
+    content: '';
+    display: block;
+    width: 16px; height: 0.5px;
+    background: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    flex-shrink: 0;
+    transition: background 0.6s ease;
+  }
+
+  /* ─── VERTICALS ───────────────────────────────────── */
+  .verticals-grid {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+  .vertical-card {
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.03);
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    overflow: hidden;
+    cursor: default;
+    transition: background 0.6s ease, border-color 0.6s ease;
+  }
+  .vc-img { width: 100%; aspect-ratio: 3/2; overflow: hidden; }
+  .vc-placeholder {
+    width: 100%; height: 100%; min-height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.05);
+    transition: background 0.5s ease;
+  }
+  .vertical-card:hover .vc-placeholder { background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.09); }
+  .vc-glyph {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    opacity: 0.22;
+    line-height: 1;
+    transition: opacity 0.4s ease, color 0.6s ease;
+    user-select: none;
+  }
+  .vertical-card:hover .vc-glyph { opacity: 0.4; }
+  .vc-content { padding: 36px 36px 40px; }
+  .vc-index {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 14px;
+    display: block;
+    transition: color 0.6s ease;
+  }
+  .vc-name {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 300;
+    color: inherit;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+  .vc-body { font-size: 13px; color: var(--muted); line-height: 1.85; }
+
+  /* ─── PAST PROJECTS ───────────────────────────────── */
+  #projects { padding: 120px 60px; }
+  .projects-header {
+    max-width: 1060px;
+    margin: 0 auto 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 32px;
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+  }
+  .projects-list {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .project-entry {
+    padding: 36px 40px 36px 0;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    transition: opacity 0.3s;
+  }
+  .project-entry:nth-child(even) {
+    padding-left: 40px;
+    padding-right: 0;
+    border-left: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+  }
+  .project-entry:hover { opacity: 0.75; }
+  .project-index {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 11px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.6s ease;
+  }
+  .project-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 300;
+    color: inherit;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .project-body { font-size: 12.5px; color: var(--muted); line-height: 1.8; }
+
+  /* ─── AUTHORSHIP ──────────────────────────────────── */
+  #authorship { padding: 120px 60px; }
+  .authorship-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .authorship-label-col {}
+  .authorship-tagline {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(32px, 3.5vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: inherit;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  .authorship-body {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.85;
+  }
+  .books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .book-card {
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.03);
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    overflow: hidden;
+    cursor: default;
+    transition: background 0.4s ease;
+  }
+  .book-card:hover { background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.06); }
+  .book-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.04);
+    border-bottom: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+  }
+  .book-glyph {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 56px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    opacity: 0.2;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    user-select: none;
+    transition: opacity 0.4s ease, color 0.6s ease;
+    text-align: center;
+  }
+  .book-card:hover .book-glyph { opacity: 0.38; }
+  .book-content { padding: 20px 24px 24px; }
+  .book-date {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 6px;
+    display: block;
+    transition: color 0.6s ease;
+  }
+  .book-title {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 300;
+    color: inherit;
+    line-height: 1.3;
+  }
+
+  /* ─── TESTIMONIALS ────────────────────────────────── */
+  #testimonials {
+    padding: 120px 60px;
+    overflow: hidden;
+  }
+  .testi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1060px;
+    margin: 0 auto 80px;
+  }
+  .testi-tag {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.6s ease;
+  }
+  .testi-tag::before {
+    content: '05';
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+  .testi-controls { display: flex; gap: 12px; align-items: center; }
+  .testi-btn {
+    width: 40px; height: 40px;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.2);
+    background: transparent;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.3s, background 0.3s;
+    color: inherit;
+  }
+  .testi-btn:hover {
+    border-color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    background: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.06);
+  }
+  .testi-btn svg { width: 14px; height: 14px; }
+  .testi-track-wrap { max-width: 1060px; margin: 0 auto; overflow: hidden; }
+  .testi-track { display: flex; transition: transform 0.8s cubic-bezier(0.77,0,0.18,1); }
+  .testi-slide {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+    padding-bottom: 4px;
+  }
+  .testi-meta { padding-top: 6px; }
+  .testi-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 300;
+    color: inherit;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .testi-role {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .testi-org {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    transition: color 0.6s ease;
+  }
+  .testi-divider {
+    width: 32px; height: 0.5px;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.15);
+    margin: 28px 0;
+    transition: background 0.6s ease;
+  }
+  .testi-quote {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(26px, 3vw, 42px);
+    line-height: 1.3;
+    color: inherit;
+    letter-spacing: -0.01em;
+  }
+  .testi-quote::before {
+    content: '\201C';
+    font-size: 1.2em;
+    opacity: 0.3;
+    margin-right: 4px;
+    vertical-align: -0.1em;
+  }
+  .testi-dots {
+    max-width: 1060px;
+    margin: 56px auto 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .testi-dot {
+    width: 20px; height: 0.5px;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.2);
+    cursor: pointer;
+    transition: background 0.4s ease, width 0.4s ease;
+  }
+  .testi-dot.active {
+    width: 40px;
+    background: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+  }
+
+  /* ─── PRESS ───────────────────────────────────────── */
+  #press {
+    padding: 100px 60px;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+  }
+  .press-inner { max-width: 1060px; margin: 0 auto; }
+  .press-grid {
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  .press-card {
+    padding: 36px;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    transition: background 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .press-card:hover { background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.04); }
+  .press-pub {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 16px;
+    display: block;
+    transition: color 0.6s ease;
+  }
+  .press-quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(16px, 1.8vw, 22px);
+    line-height: 1.4;
+    color: inherit;
+  }
+  .press-attr {
+    margin-top: 20px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ─── PRESENCE ────────────────────────────────────── */
+  #presence {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 560px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .presence-bg-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .presence-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(12,11,9,0.88) 0%, rgba(12,11,9,0.3) 50%, rgba(12,11,9,0.04) 100%);
+  }
+  .presence-content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .presence-tag {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--warm);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .presence-tag::before { content: ''; display: block; width: 32px; height: 0.5px; background: var(--warm); }
+  .presence-locations { display: flex; gap: 0; }
+  .location-item {
+    padding-right: 56px;
+    margin-right: 56px;
+    border-right: 0.5px solid rgba(255,250,235,0.15);
+  }
+  .location-item:last-child { border-right: none; }
+  .loc-country { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,250,235,0.5); margin-bottom: 8px; }
+  .loc-city { font-family: var(--serif); font-size: 36px; font-weight: 300; font-style: italic; color: #FFFAEB; line-height: 1.1; }
+
+  /* ─── SANCTUARY ───────────────────────────────────── */
+  #sanctuary {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    min-height: 640px;
+    display: flex;
+    align-items: flex-end;
+  }
+  #sanctuary-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .sanctuary-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(12,11,9,0.92) 0%, rgba(12,11,9,0.4) 60%, rgba(12,11,9,0.08) 100%);
+  }
+  .sanctuary-content { position: relative; z-index: 2; padding: 80px 60px; max-width: 680px; }
+  .sanctuary-label {
+    font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 24px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .sanctuary-label::before { content: ''; display: block; width: 32px; height: 0.5px; background: var(--warm); }
+  .sanctuary-title {
+    font-family: var(--serif); font-weight: 300;
+    font-size: clamp(42px, 4.5vw, 64px);
+    line-height: 1.05; color: #FFFAEB;
+    margin-bottom: 24px; letter-spacing: -0.01em;
+  }
+  .sanctuary-body { font-size: 14px; color: rgba(255,250,235,0.65); line-height: 1.85; max-width: 480px; }
+
+  /* ─── CULTURE ─────────────────────────────────────── */
+  #culture { padding: 0; overflow: hidden; }
+  .culture-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 600px; }
+  .culture-image {
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.06);
+    transition: background 0.6s ease;
+  }
+  .culture-placeholder {
+    width: 100%; height: 100%; min-height: 400px;
+    display: flex; align-items: center; justify-content: center; padding: 60px;
+  }
+  .culture-wordmark-bg {
+    font-family: var(--serif); font-style: italic; font-weight: 300;
+    font-size: clamp(64px, 9vw, 140px);
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    opacity: 0.12; letter-spacing: -0.03em; line-height: 1;
+    user-select: none; text-align: center;
+    transition: color 0.6s ease, opacity 0.4s ease;
+  }
+  .culture-image:hover .culture-wordmark-bg { opacity: 0.22; }
+  .culture-text { padding: 80px 72px; display: flex; flex-direction: column; justify-content: center; }
+  .ct-label {
+    font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 32px; display: flex; align-items: center; gap: 16px;
+    transition: color 0.6s ease;
+  }
+  .ct-label::before {
+    content: ''; display: block; width: 32px; height: 0.5px;
+    background: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    transition: background 0.6s ease;
+  }
+  .ct-title {
+    font-family: var(--serif); font-weight: 300;
+    font-size: clamp(36px, 3.5vw, 52px); line-height: 1.1;
+    color: inherit; margin-bottom: 24px; letter-spacing: -0.01em;
+  }
+  .ct-body { font-size: 14px; color: var(--muted); line-height: 1.85; margin-bottom: 40px; }
+  .ct-sub {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.12);
+    padding-top: 28px; margin-top: auto;
+    transition: color 0.6s ease, border-color 0.6s ease;
+  }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer {
+    padding: 80px 60px;
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    transition: border-color 0.6s ease;
+  }
+  .footer-inner {
+    max-width: 1060px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .footer-left .wordmark { display: block; margin-bottom: 14px; }
+  .footer-left p { font-size: 12px; color: var(--muted); line-height: 1.8; }
+  .footer-right { text-align: right; }
+  .contact-link {
+    font-family: var(--serif); font-style: italic;
+    font-size: 24px; font-weight: 300;
+    color: inherit; text-decoration: none; display: block;
+    margin-bottom: 8px; transition: color 0.3s;
+  }
+  .contact-link:hover { color: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); }
+  .footer-copy { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; }
+
+  /* ─── ANIMATIONS ──────────────────────────────────── */
+  @keyframes fadeIn { to { opacity: 1; } }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── RESPONSIVE ──────────────────────────────────── */
+  @media (max-width: 900px) {
+    nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    section { padding: 80px 24px; }
+    #hero { padding: 60px 24px; }
+    #trust { padding: 28px 24px; }
+    .trust-sep { display: none; }
+    .trust-inner { gap: 20px; }
+    #affiliations { padding: 40px 24px; }
+    .aff-track { justify-content: center; gap: 20px; }
+    .aff-div { display: none; }
+    #bio { padding: 80px 24px; }
+    .bio-inner { grid-template-columns: 1fr; gap: 48px; }
+    #portfolio { padding: 0 24px 80px; }
+    .portfolio-grid { grid-template-columns: 1fr; }
+    .portfolio-item:nth-child(even) { padding-left: 0; border-left: none; }
+    #serve { padding: 80px 24px; }
+    .serve-inner { grid-template-columns: 1fr; gap: 40px; }
+    .serve-grid { grid-template-columns: 1fr; }
+    .fw-body { grid-template-columns: 1fr; }
+    .fw-image { min-height: 320px; }
+    .fw-text { padding: 40px 0; }
+    #gene-philosophy { padding: 80px 24px; }
+    .gene-phil-inner { grid-template-columns: 1fr; gap: 40px; }
+    .gene-phil-letter { font-size: 80px; }
+    .verticals-grid { grid-template-columns: 1fr; }
+    #projects { padding: 80px 24px; }
+    .projects-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .projects-list { grid-template-columns: 1fr; }
+    .project-entry:nth-child(even) { padding-left: 0; border-left: none; }
+    #authorship { padding: 80px 24px; }
+    .authorship-inner { grid-template-columns: 1fr; gap: 48px; }
+    .books-grid { grid-template-columns: 1fr 1fr; }
+    .press-grid { grid-template-columns: 1fr; }
+    .testi-slide { grid-template-columns: 1fr; gap: 32px; }
+    .testi-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+    #testimonials { padding: 80px 24px; }
+    .presence-content { padding: 60px 24px; }
+    .presence-locations { flex-direction: column; gap: 28px; }
+    .location-item { border-right: none; border-bottom: 0.5px solid rgba(255,250,235,0.15); padding-bottom: 28px; padding-right: 0; margin-right: 0; }
+    .sanctuary-content { padding: 60px 24px; }
+    .culture-inner { grid-template-columns: 1fr; }
+    .culture-text { padding: 60px 32px; }
+    #press { padding: 80px 24px; }
+    .footer-inner { flex-direction: column; gap: 40px; align-items: flex-start; }
+    .footer-right { text-align: left; }
+    footer { padding: 60px 24px; }
+  }
+
+
+  /* ─── MOBILE-FIRST POLISH / SEAMLESS OPTIMIZATION ─────────────────────── */
+  :root {
+    --page-x: clamp(20px, 5vw, 60px);
+    --section-y: clamp(72px, 11vw, 120px);
+    --nav-h: 78px;
+    --glass-bg: rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0.74);
+  }
+
+  html {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    min-width: 320px;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+
+  img, video, canvas, svg { max-width: 100%; }
+  img { height: auto; }
+  a, button { -webkit-tap-highlight-color: transparent; }
+  section, #trust, #affiliations, #portfolio, footer { scroll-margin-top: var(--nav-h); }
+
+  nav {
+    padding-left: max(var(--page-x), env(safe-area-inset-left));
+    padding-right: max(var(--page-x), env(safe-area-inset-right));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: linear-gradient(to bottom, var(--glass-bg), rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0));
+  }
+
+  .wordmark, .nav-toggle { position: relative; z-index: 202; }
+
+  .nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.18);
+    border-radius: 999px;
+    background: rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0.18);
+    color: inherit;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s ease;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+  }
+
+  nav.nav-open .nav-toggle span:first-child { transform: translateY(3.5px) rotate(42deg); }
+  nav.nav-open .nav-toggle span:last-child { transform: translateY(-3.5px) rotate(-42deg); }
+  body.menu-open { overflow: hidden; }
+
+  #hero {
+    min-height: 100svh;
+    height: 100vh;
+    padding-left: max(var(--page-x), env(safe-area-inset-left));
+    padding-right: max(var(--page-x), env(safe-area-inset-right));
+    padding-bottom: max(72px, env(safe-area-inset-bottom));
+  }
+
+  section { padding-left: var(--page-x); padding-right: var(--page-x); }
+  #trust, #affiliations, #portfolio, footer { padding-left: var(--page-x); padding-right: var(--page-x); }
+
+  .container,
+  .trust-inner,
+  .aff-track,
+  .bio-inner,
+  .portfolio-inner,
+  .serve-inner,
+  .gene-phil-inner,
+  .projects-header,
+  .projects-list,
+  .authorship-inner,
+  .testi-header,
+  .testi-track-wrap,
+  .testi-dots,
+  .press-inner,
+  .footer-inner { width: min(100%, 1060px); }
+
+  .fw-body { width: min(100%, 1180px); }
+
+  .bio-body,
+  .fi-body,
+  .vc-body,
+  .project-body,
+  .authorship-body,
+  .gene-phil-body,
+  .ct-body,
+  .sanctuary-body { text-wrap: pretty; }
+
+  .hero-thesis, h2, .serve-heading, .gene-phil-heading, .authorship-tagline, .testi-quote { text-wrap: balance; }
+
+  @media (max-width: 900px) {
+    :root { --nav-h: 70px; }
+
+    nav {
+      padding-top: max(16px, env(safe-area-inset-top));
+      padding-bottom: 14px;
+      color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    }
+
+    .nav-toggle { display: flex; }
+
+    .nav-links {
+      display: flex !important;
+      position: fixed;
+      inset: 0;
+      z-index: 201;
+      min-height: 100svh;
+      padding: calc(var(--nav-h) + 30px) 28px 44px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 26px;
+      background:
+        radial-gradient(ellipse 90% 52% at 50% 20%, rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.12), transparent 72%),
+        rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0.97);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    nav.nav-open .nav-links {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .nav-links a {
+      font-family: var(--serif);
+      font-size: clamp(34px, 11vw, 58px);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      text-transform: none;
+      opacity: 1;
+    }
+
+    .wordmark { font-size: 12px; letter-spacing: 0.2em; }
+    .wordmark-sep { width: 14px; margin: 0 7px; }
+
+    #hero {
+      min-height: 100svh;
+      height: 100svh;
+      padding-top: calc(var(--nav-h) + 24px);
+      padding-bottom: max(54px, env(safe-area-inset-bottom));
+      align-items: flex-end;
+    }
+
+    .hero-content { max-width: 100%; }
+    .hero-label { margin-bottom: 22px; line-height: 1.7; letter-spacing: 0.24em; }
+    .hero-thesis { font-size: clamp(40px, 11.8vw, 66px); line-height: 1.02; }
+    .hero-headline, .hero-subheadline { align-items: flex-start; line-height: 1.6; }
+    .hero-subheadline { font-size: 13.5px; max-width: 92%; }
+    #pillars { padding: 80px var(--page-x) 72px; }
+    .pillar-header { margin-bottom: 38px; }
+    .pillar-grid { grid-template-columns: 1fr; }
+    .pillar-card { min-height: auto; gap: 34px; }
+    .compliance-panel { grid-template-columns: 1fr; }
+
+    #trust .trust-inner {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 22px;
+      align-items: start;
+    }
+    .trust-item { align-items: flex-start; }
+    .trust-text { letter-spacing: 0.13em; }
+
+    .aff-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+    .aff-item { justify-content: center; padding: 0; }
+
+    .portfolio-heading-row { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 36px; }
+    .portfolio-item { padding: 22px 0; gap: 18px; }
+    .portfolio-item[style] { grid-column: auto !important; }
+
+    .fw-item { grid-template-columns: 1fr; gap: 8px; padding: 28px 0; }
+    .fw-image img { min-height: 320px !important; }
+
+    .vertical-card[style] {
+      grid-column: auto !important;
+      display: block !important;
+      grid-template-columns: 1fr !important;
+    }
+    .vertical-card[style] .vc-img { min-height: 220px; }
+    .vertical-card[style] .vc-content { display: block !important; }
+
+    .projects-header { margin-bottom: 42px; }
+    .project-entry { padding: 30px 0; }
+
+    .testi-track-wrap { overflow: visible; }
+    .testi-slide { min-width: 100%; }
+    .testi-controls { width: 100%; justify-content: flex-start; }
+
+    #presence, #sanctuary { min-height: 560px; }
+    .presence-content, .sanctuary-content { width: 100%; }
+    .loc-city { font-size: clamp(32px, 12vw, 46px); }
+
+    .culture-placeholder { min-height: 300px; padding: 42px 24px; }
+    .culture-text { padding-left: var(--page-x); padding-right: var(--page-x); }
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 14px; line-height: 1.72; }
+    section { padding-top: 72px; padding-bottom: 72px; }
+    #bio, #serve, #projects, #authorship, #testimonials, #press { padding-top: 72px; padding-bottom: 72px; }
+
+    .bio-name { font-size: clamp(48px, 16vw, 68px); }
+    .bio-title, .portfolio-tag, .serve-label, .section-tag, .ct-label, .presence-tag, .sanctuary-label, .testi-tag { letter-spacing: 0.2em; }
+    .bio-body { font-size: 14px; line-height: 1.82; }
+
+    .serve-card, .vc-content, .press-card, .pillar-card { padding: 28px 24px; }
+    .serve-card-name, .vc-name, .project-name { font-size: 22px; }
+    .pillar-title { font-size: clamp(28px, 9vw, 36px); }
+    .pillar-body { font-size: 13.5px; line-height: 1.85; }
+    #compliance { padding-top: 72px; padding-bottom: 72px; }
+    .compliance-copy { font-size: clamp(28px, 8.8vw, 38px); }
+
+    .books-grid { grid-template-columns: 1fr; }
+    .book-placeholder { aspect-ratio: 4/3; }
+    .authorship-tagline { margin-top: 12px; }
+
+    .press-grid { margin-top: 36px; }
+    .press-card { min-height: auto; }
+
+    footer { padding-top: 54px; padding-bottom: max(54px, env(safe-area-inset-bottom)); }
+    .contact-link { font-size: 26px; }
+  }
+
+  @media (max-width: 420px) {
+    :root { --page-x: 20px; }
+    .hero-thesis { font-size: clamp(36px, 11.6vw, 50px); }
+    .hero-label, .hero-headline { font-size: 9px; }
+    .hero-subheadline { font-size: 12.8px; max-width: 100%; }
+    #trust .trust-inner, .aff-track { grid-template-columns: 1fr; }
+    .trust-item { gap: 14px; }
+    .press-quote { font-size: 20px; }
+    .footer-left p { font-size: 11.5px; }
+  }
+
+  @media (hover: none) {
+    .portfolio-item:hover, .project-entry:hover, .aff-item:hover { opacity: 1; }
+    .img-harmonized:hover, .bio-portrait:hover img { filter: grayscale(14%) contrast(1.05) sepia(5%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+
+
+
+  /* ─── AETHERSOVEREIGN SYSTEM ADDITIONS ─────────────────────────────── */
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+  }
+  .hero-cta {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border: 0.5px solid rgba(255,250,235,0.34);
+    border-radius: 999px;
+    color: #FFFAEB;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: background 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
+  }
+  .hero-cta.primary { background: rgba(255,250,235,0.12); border-color: rgba(180,154,110,0.62); }
+  .hero-cta:hover { transform: translateY(-1px); background: rgba(255,250,235,0.18); }
+  .compliance-heading {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(34px, 3.8vw, 54px);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    margin-top: 22px;
+  }
+  .compliance-right { display: grid; gap: 24px; }
+  .compliance-detail { font-size: 14px; line-height: 1.9; color: var(--muted); max-width: 720px; }
+  .compliance-list { list-style: none; display: grid; gap: 12px; margin-top: 4px; }
+  .compliance-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--muted);
+    border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.08);
+    padding-top: 12px;
+  }
+  .compliance-list li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-top: 9px;
+    flex: 0 0 auto;
+  }
+  .contact-system { padding: 120px var(--page-x, 60px); }
+  .contact-header { max-width: 860px; margin-bottom: 54px; }
+  .contact-lede { margin-top: 24px; max-width: 720px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+  .contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; margin-bottom: 2px; }
+  .contact-card {
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.025);
+    padding: clamp(28px, 3.4vw, 42px);
+    min-height: 220px;
+  }
+  .contact-label {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+    margin-bottom: 18px;
+  }
+  .contact-main, .contact-card address {
+    font-family: var(--serif);
+    font-size: clamp(22px, 2.3vw, 31px);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.18;
+    color: inherit;
+    text-decoration: none;
+    word-break: break-word;
+  }
+  .contact-card p { margin-top: 20px; color: var(--muted); font-size: 12.5px; line-height: 1.8; }
+  .contact-card a { color: inherit; }
+  .mandate-form {
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    padding: clamp(28px, 4vw, 52px);
+    background: linear-gradient(135deg, rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.035), transparent 70%);
+  }
+  .form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .mandate-form label {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-r), var(--accent-g), var(--accent-b));
+  }
+  .mandate-form input, .mandate-form textarea {
+    width: 100%;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.16);
+    background: rgba(var(--bg-r), var(--bg-g), var(--bg-b), 0.48);
+    color: rgb(var(--fg-r), var(--fg-g), var(--fg-b));
+    font: 300 14px/1.6 var(--sans);
+    padding: 14px 16px;
+    border-radius: 0;
+    outline: none;
+  }
+  .mandate-form input:focus, .mandate-form textarea:focus { border-color: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.72); }
+  .form-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 8px; }
+  .form-actions button, .form-actions a {
+    min-height: 46px;
+    padding: 13px 18px;
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.2);
+    background: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.11);
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .form-note { margin-top: 18px; color: var(--muted); font-size: 11.5px; line-height: 1.7; }
+  .legal-section { padding: 110px var(--page-x, 60px); border-top: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1); }
+  .privacy-section { padding-top: 70px; }
+  .legal-header { margin-bottom: 52px; max-width: 860px; }
+  .legal-updated { margin-top: 18px; color: var(--muted); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .legal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+  .legal-grid.compact { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .legal-block {
+    border: 0.5px solid rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.1);
+    background: rgba(var(--fg-r), var(--fg-g), var(--fg-b), 0.02);
+    padding: clamp(26px, 3vw, 38px);
+  }
+  .legal-block h3 {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2vw, 28px);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .legal-block p { color: var(--muted); font-size: 12.8px; line-height: 1.85; }
+  .legal-block a { color: inherit; }
+  .footer-tel { display: block; color: inherit; text-decoration: none; font-size: 12px; letter-spacing: 0.12em; margin-bottom: 12px; }
+
+  @media (max-width: 900px) {
+    .contact-grid, .legal-grid, .legal-grid.compact { grid-template-columns: 1fr; }
+    .contact-system, .legal-section { padding-top: 80px; padding-bottom: 80px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .contact-card { min-height: auto; }
+  }
+  @media (max-width: 520px) {
+    .hero-actions, .form-actions { flex-direction: column; align-items: stretch; }
+    .hero-cta, .form-actions button, .form-actions a { width: 100%; }
+    .contact-main, .contact-card address { font-size: clamp(20px, 8vw, 28px); }
+  }
+</style>
+<meta content="AetherSovereign, sovereign infrastructure, UAE Net Zero 2050, industrial decarbonization, longevity medicine, digital assets, Dubai" name="keywords"><meta content="AetherSovereign" name="author"><meta content="index, follow" name="robots"><meta content="AetherSovereign · Sovereign Infrastructure Ecosystems" property="og:title"><meta content="Sovereign infrastructure ecosystems for the next generation." property="og:description"><meta content="website" property="og:type"><meta content="https://aethersovereign.ae/" property="og:url"><meta content="AetherSovereign" property="og:site_name"><meta content="summary_large_image" name="twitter:card"><link href="https://aethersovereign.ae/" rel="canonical"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AetherSovereign",
+  "url": "https://aethersovereign.ae/",
+  "email": "management@aethersovereign.ae",
+  "telephone": "+971 55 857 4997",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Al Barsha 3, 316 Rd",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "postalCode": "0000",
+    "addressCountry": "AE"
+  }
+}
+</script></head>
+<body>
+<!-- NAV -->
+<nav aria-label="Primary navigation" id="nav">
+<a class="wordmark" href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#hero">Aether<span class="wordmark-sep"></span>Sovereign</a>
+<button aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links" id="nav-menu"><li><a href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#hero">Home</a></li><li><a href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#pillars">Pillars</a></li><li><a href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#compliance">Compliance</a></li><li><a href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#contact">Contact</a></li><li><a href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#terms">Terms</a></li></ul>
+</nav>
+<!-- HERO -->
+<section id="hero">
+<video aria-hidden="true" autoplay="" id="hero-video" loop="" muted="" playsinline="" preload="metadata" src="https://altairvega.co/_assets/video/584e8ac6fe7115f778aa677237c18f68.mp4">
+</video>
+<div class="hero-overlay" id="hero-overlay" style="background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.45) 75%, rgb(241, 235, 226) 100%);"></div>
+<div class="hero-content">
+<p class="hero-label">UAE Net Zero 2050 · Zero-Emission Industry · Longevity Medicine</p>
+<h1 class="hero-thesis">Sovereign Infrastructure Ecosystems<br>for the Next Generation.</h1>
+<p class="hero-subheadline">Pioneering the integration of zero-emission industrial technologies, decentralized digital assets, and institutional longevity medicine aligned with the UAE Net Zero 2050 Agenda.</p>
+<div class="hero-actions"><a class="hero-cta primary" href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#contact">Start a mandate</a><a class="hero-cta secondary" href="https://wa.me/971558574997?text=Hello%20AetherSovereign%2C%20I%20would%20like%20to%20discuss%20a%20sovereign%20infrastructure%20mandate." rel="noopener" target="_blank">WhatsApp</a></div></div>
+</section>
+<hr class="rule" id="rule-1">
+<!-- TRUST STRIP -->
+<div id="trust">
+<div class="trust-inner">
+<div class="trust-item reveal visible">
+<svg class="trust-icon" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 28 28">
+<circle cx="14" cy="14" r="12"></circle><path d="M9 14l3 3 7-7"></path>
+</svg>
+<span class="trust-text">UAE Net Zero<br>2050 aligned</span>
+</div>
+<div class="trust-sep"></div>
+<div class="trust-item reveal visible">
+<svg class="trust-icon" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 28 28">
+<rect height="14" rx="1" width="20" x="4" y="8"></rect><path d="M4 12h20M10 8V6a4 4 0 018 0v2"></path>
+</svg>
+<span class="trust-text">Institutional<br>Joint Ventures</span>
+</div>
+<div class="trust-sep"></div>
+<div class="trust-item reveal visible">
+<svg class="trust-icon" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 28 28">
+<path d="M14 3L4 8v6c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V8L14 3z"></path>
+</svg>
+<span class="trust-text">European compliance<br>protocols</span>
+</div>
+<div class="trust-sep"></div>
+<div class="trust-item reveal visible">
+<svg class="trust-icon" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 28 28">
+<circle cx="14" cy="14" r="10"></circle><path d="M14 4a10 10 0 010 20M4 14h20M14 4c-3 3-4.5 6.3-4.5 10s1.5 7 4.5 10"></path>
+</svg>
+<span class="trust-text">Decentralized<br>digital assets</span>
+</div>
+<div class="trust-sep"></div>
+<div class="trust-item reveal visible">
+<svg class="trust-icon" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 28 28">
+<path d="M14 2l3.1 8.6H26l-7.3 5.3 2.8 8.6L14 19.2l-7.5 5.3 2.8-8.6L2 10.6h8.9L14 2z"></path>
+</svg>
+<span class="trust-text">Zero-emission<br>industrial systems</span>
+</div>
+</div>
+</div>
+<!-- STRATEGIC PILLARS -->
+<section id="pillars">
+<div class="container">
+<div class="pillar-header reveal visible">
+<p class="pillar-kicker">Strategic Pillars</p>
+<p class="pillar-lede">Integrated platforms for sovereign health, energy, and digital resilience.</p>
+</div>
+<div class="pillar-grid">
+<article class="pillar-card reveal visible">
+<div>
+<span class="pillar-index">I</span>
+<p class="pillar-domain">Institutional Longevity Medicine</p>
+<h2 class="pillar-title">Advanced Longevity &amp; Regenerative Infrastructure</h2>
+</div>
+<p class="pillar-body">We design and deploy high-scale institutional frameworks for longevity medicine, integrating biological data security.</p>
+</article>
+<article class="pillar-card reveal visible">
+<div>
+<span class="pillar-index">II</span>
+<p class="pillar-domain">Industrial Decarbonization</p>
+<h2 class="pillar-title">Sovereign Industrial Decarbonization</h2>
+</div>
+<p class="pillar-body">Implementing cutting-edge solar hybrid integration and autonomous energy solutions to power zero-emission medical and urban infrastructures, perfectly synchronized with the strategic 2030 and 2040 regional agendas.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- COMPLIANCE -->
+<section id="compliance"><div class="compliance-panel reveal visible"><div class="compliance-left"><p class="compliance-label">Compliance</p><h2 class="compliance-heading">Structured for institutional confidence.</h2></div><div class="compliance-right"><p class="compliance-copy">Operating under strict European compliance protocols and structured through institutional Joint Ventures. All Intellectual Property (IP) and technical frameworks are fully protected under international sovereignty laws.</p><p class="compliance-detail">AetherSovereign uses confidentiality, governance, data-protection, intellectual-property and project-control protocols appropriate for institutional advisory, infrastructure strategy, decarbonization systems, digital assets and longevity-related frameworks.</p><ul class="compliance-list"><li>Confidential institutional intake and mandate scoping</li><li>Protected technical frameworks, IP documentation and JV governance</li><li>Clear disclaimers for medical, financial and investment-related content</li><li>UAE contactability with email, phone and WhatsApp pathways</li></ul></div></div></section>
+<!-- AFFILIATIONS -->
+<div id="affiliations">
+<p class="aff-label reveal visible">Selected Associations &amp; Aligned Partners</p>
+<div class="aff-track">
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 110 28" width="110">
+<text fill="currentColor" font-family="&#39;Cormorant Garamond&#39;, serif" font-size="13" font-weight="300" letter-spacing="3.5" x="0" y="20">SIX SENSES</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 84 28" width="84">
+<text fill="currentColor" font-family="&#39;DM Sans&#39;, sans-serif" font-size="10" font-weight="300" letter-spacing="4" x="0" y="20">MASDAR</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 66 28" width="66">
+<text fill="currentColor" font-family="&#39;DM Sans&#39;, sans-serif" font-size="10" font-weight="400" letter-spacing="4" x="0" y="20">NEOM</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 108 28" width="108">
+<text fill="currentColor" font-family="&#39;DM Sans&#39;, sans-serif" font-size="10" font-weight="300" letter-spacing="3.5" x="0" y="20">MUBADALA</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 148 28" width="148">
+<text fill="currentColor" font-family="&#39;Cormorant Garamond&#39;, serif" font-size="13" font-style="italic" font-weight="300" letter-spacing="2" x="0" y="20">Clinique La Prairie</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 96 28" width="96">
+<text fill="currentColor" font-family="&#39;DM Sans&#39;, sans-serif" font-size="10" font-weight="300" letter-spacing="3.5" x="0" y="20">ACWA POWER</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 56 28" width="56">
+<text fill="currentColor" font-family="&#39;DM Sans&#39;, sans-serif" font-size="10" font-weight="300" letter-spacing="4" x="0" y="20">W·E·F</text>
+</svg>
+</div>
+<div class="aff-div"></div>
+<div class="aff-item reveal visible">
+<svg fill="none" height="28" viewBox="0 0 128 28" width="128">
+<text fill="currentColor" font-family="&#39;Cormorant Garamond&#39;, serif" font-size="13" font-weight="300" letter-spacing="3" x="0" y="20">IMAGE NATION</text>
+</svg>
+</div>
+</div>
+</div>
+<!-- BIO: Gemma M -->
+<section id="bio">
+<div class="bio-inner">
+<div class="bio-text-col">
+<div class="reveal visible">
+<p class="bio-name">Gemma M</p>
+<p class="bio-title">Chief Executive &amp; Chair — AetherSovereign</p>
+</div>
+<p class="bio-body reveal visible">
+        A Spanish professional with a distinguished career spanning Europe, the GCC, the US, and the UK, I merge longevity, regenerative medicine, technology, decarbonized structures, and strategic economic execution to drive systemic impact. My work focuses on urban development, national infrastructure, and cultural and health systems innovation — successfully bridging private breakthroughs with public governance.
+
+I architect holistic solutions across smart mobility, green energy, smart hospitals, proptech, maritime logistics, digital infrastructure, and cultural ecosystems to elevate both communities and nations. Our strategy emphasizes long-term vision, actionable insights, and high-level collaboration with sovereign entities, private investors, and global innovators to foster sustainable growth and regional leadership.
+
+Grounded in my background as a former vocalist and performing artist, as well as a holistic strategist, I bring transformation to both people and spaces. My trajectory shapes world-class destinations at the intersection of urban design, luxury, and global infrastructure for a healthier, more vibrant existence. The vessels we inhabit—both our bodies and our buildings—are equally vital.
+
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+
+We don't just imagine sovereign futures. We architect systems that breathe, adapt, and thrive.      </p>
+<p class="bio-body reveal visible">
+        I engage in projects related to smart mobility, green energy, maritime logistics, digital infrastructure, and cultural ecosystems, aiming for holistic solutions that benefit people and nations. Our strategy emphasises long-term vision, actionable insights, and collaboration with sovereign entities, private investors, and global innovators to foster sustainable growth and regional leadership.
+      </p>
+<p class="bio-body reveal visible">
+       A Spanish professional with a distinguished career spanning Europe, the GCC, the US, and the UK, I merge longevity, regenerative medicine, technology, decarbonized structures, and strategic economic execution to drive systemic impact. My work focuses on urban development, national infrastructure, and cultural and health systems innovation — successfully bridging private breakthroughs with public governance.
+
+I architect holistic solutions across smart mobility, green energy, smart hospitals, proptech, maritime logistics, digital infrastructure, and cultural ecosystems to elevate both communities and nations. Our strategy emphasizes long-term vision, actionable insights, and high-level collaboration with sovereign entities, private investors, and global innovators to foster sustainable growth and regional leadership.
+
+Grounded in my background as a former vocalist and performing artist, as well as a holistic strategist, I bring transformation to both people and spaces. My trajectory shapes world-class destinations at the intersection of urban design, luxury, and global infrastructure for a healthier, more vibrant existence. The vessels we inhabit—both our bodies and our buildings—are equally vital.
+
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+
+We don't just imagine sovereign futures. We architect systems that breathe, adapt, and thrive.      </p>
+<p class="bio-body reveal visible">
+        We don't just imagine sovereign futures.<br>We architect systems that breathe, adapt, and thrive.
+      </p>
+</div>
+<div class="bio-portrait reveal visible">
+<img alt="Gemma M" decoding="async" fetchpriority="high" loading="eager" onerror="this.style.background=&#39;rgba(var(--fg-r),var(--fg-g),var(--fg-b),0.06)&#39;;this.style.minHeight=&#39;480px&#39;;this.removeAttribute(&#39;src&#39;)" style="background: rgba(var(--fg-r),var(--fg-g),var(--fg-b),0.06); min-height: 480px;">
+<p class="bio-portrait-caption">Gemma M<br>Chief Executive &amp; Chair</p>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO: OMAN NATIONAL -->
+<div id="portfolio">
+<div class="portfolio-inner">
+<div class="portfolio-heading-row reveal visible">
+<span class="portfolio-tag">Oman National &amp; Regional Portfolio</span>
+<p class="portfolio-subtitle">Seven realms of sovereign execution</p>
+</div>
+<div class="portfolio-grid">
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">National Digital Platforms (iDPM)</span>
+</div>
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">Energy Transition &amp; Industrial Ecosystems</span>
+</div>
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">Transport, Rail &amp; Smart Mobility</span>
+</div>
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">Ports, Maritime &amp; Logistics</span>
+</div>
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">Cultural Platforms &amp; Narrative Architecture</span>
+</div>
+<div class="portfolio-item reveal visible">
+<div class="pi-dot"></div>
+<span class="pi-text">Sovereign Strategy &amp; Alignment</span>
+</div>
+<div class="portfolio-item reveal visible" style="grid-column: 1 / -1; border-left: none; padding-left: 0;">
+<div class="pi-dot"></div>
+<span class="pi-text">R&amp;D and Exportable National IP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- WHO WE SERVE -->
+<section id="serve">
+<div class="serve-inner">
+<div class="reveal visible">
+<p class="serve-label">Who we serve</p>
+<h2 class="serve-heading">Built for those<br>who build nations.</h2>
+</div>
+<div class="serve-grid">
+<div class="serve-card reveal visible">
+<span class="serve-card-num">i</span>
+<p class="serve-card-name">Royal Offices &amp; Sovereign Entities</p>
+<p class="serve-card-body">Strategic advisory at the intersection of policy, vision, and implementation — structured for leadership at the highest level.</p>
+</div>
+<div class="serve-card reveal visible">
+<span class="serve-card-num">ii</span>
+<p class="serve-card-name">Government Ministries</p>
+<p class="serve-card-body">Energy, water, health, and infrastructure ministries navigating the transition from resource dependency to sovereign resilience.</p>
+</div>
+<div class="serve-card reveal visible">
+<span class="serve-card-num">iii</span>
+<p class="serve-card-name">Sovereign Wealth &amp; Investment Funds</p>
+<p class="serve-card-body">Capital deployment strategies aligned with Vision 2030, 2040, and long-horizon national mandates across green and human capital.</p>
+</div>
+<div class="serve-card reveal visible">
+<span class="serve-card-num">iv</span>
+<p class="serve-card-name">Private Sector &amp; Global Institutions</p>
+<p class="serve-card-body">Multinationals, development banks, and fintech partners seeking trusted access and cultural intelligence across Gulf and oceanic markets.</p>
+</div>
+</div>
+</div>
+</section>
+<hr class="rule">
+<!-- GENE FRAMEWORK -->
+<section id="framework">
+<div class="container">
+<div class="reveal visible">
+<p class="section-tag" data-num="01">Framework</p>
+<h2>The GENE system</h2>
+</div>
+</div>
+<div class="fw-body" style="max-width:1180px;margin:0 auto;">
+<div class="fw-text">
+<div class="fw-item reveal visible">
+<span class="fi-label">Technology</span>
+<div>
+<p class="fi-name">HydroGENE</p>
+<p class="fi-body">The green technology layer — development and deployment of advanced systems across hydrogen, green ammonia, green fuels, and decarbonisation. Translating next-generation science into viable, scalable solutions. Developed in Omani Code.</p>
+</div>
+</div>
+<div class="fw-item reveal visible">
+<span class="fi-label">Infrastructure</span>
+<div>
+<p class="fi-name">HydraGENE</p>
+<p class="fi-body">Operating at the infrastructure and systems level: utilities development, maritime and energy corridors, green ammonia production, carbon management. Anchoring breakthrough technology in real-world delivery at national scale.</p>
+</div>
+</div>
+<div class="fw-item reveal visible">
+<span class="fi-label">Interface</span>
+<div>
+<p class="fi-name">GENE iDPM</p>
+<p class="fi-body">A dynamic digital platform supporting Vision 2030 and 2040. Utilising proprietary AI — Nabdh al Ma'a — to consolidate national data into a unified dashboard, enabling real-time monitoring of sovereign progress and cross-ministerial coordination.</p>
+</div>
+</div>
+</div>
+<div class="fw-image reveal visible">
+<img alt="Green infrastructure" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/0a916806b298831b5ab499cf905e547b.png" style="min-height:420px;">
+</div>
+</div>
+</section>
+<!-- GENE PHILOSOPHY -->
+<section id="gene-philosophy">
+<div class="gene-phil-inner">
+<div aria-hidden="true" class="gene-phil-letter reveal visible">GENE</div>
+<div class="gene-phil-text">
+<div class="reveal visible">
+<p class="section-tag" data-num="">Soul of GENE</p>
+<p class="gene-phil-heading">A new vision<br>of sovereignty</p>
+</div>
+<p class="gene-phil-body reveal visible">
+        GENE — Governance, Energy, Nature, Economy — redefines sovereignty as the fundamental order of thriving societies. It promotes collaborations to restore wellness, honour cultural heritage, amplify feminine intelligence, and nurture regenerative economies. It acts as a compass for leaders guided by soul currency and ancestral wisdom.
+      </p>
+<p class="gene-phil-body reveal visible">
+        Each node — Santine, AtelierX, and HydroGENE — embodies this source, emphasising a future designed with beauty, integrity, and systemic intelligence. GENE is more than a model; it is an operating system for regeneration.
+      </p>
+<ul class="gene-phil-list reveal visible">
+<li>An ecosystem of sovereign systems</li>
+<li>Transformative experiences</li>
+<li>Innovative creations</li>
+</ul>
+</div>
+</div>
+</section>
+<hr class="rule">
+<!-- VERTICALS -->
+<section id="verticals">
+<div class="container">
+<div class="reveal">
+<p class="section-tag" data-num="02">Verticals</p>
+<h2>Realms of practice</h2>
+</div>
+<div class="verticals-grid">
+<div class="vertical-card reveal">
+<div class="vc-img">
+<img alt="Health and Longevity" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/b75f4b52d433deb34d7b0082c3cd9b41.png">
+</div>
+<div class="vc-content">
+<span class="vc-index">I</span>
+<p class="vc-name">Health &amp; Longevity</p>
+<p class="vc-body">An innovative health ecosystem blending technology, sacred rituals, and vitality. Santine: an exclusive sanctuary where longevity science, CRISPR precision, and conscious living converge. Health Services, Wellbeing, Beauty.</p>
+</div>
+</div>
+<div class="vertical-card reveal">
+<div class="vc-img">
+<img alt="Ocean Energy" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/654fab3817d0f7cea6a1d5d0f1ac1bcc.png">
+</div>
+<div class="vc-content">
+<span class="vc-index">II</span>
+<p class="vc-name">Ocean-linked Energy &amp; Water</p>
+<p class="vc-body">Sovereign maritime corridors and energy infrastructure securing water and energy independence for nations. Systems-level thinking at the scale of coastlines and futures. Green Tech innovation, Green Energy production, Green Utilities &amp; Power.</p>
+</div>
+</div>
+<div class="vertical-card reveal">
+<div class="vc-img">
+<img alt="Culture and Diplomacy" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/346f7ec8ed973cf0a2c469b051c043b7.jpg">
+</div>
+<div class="vc-content">
+<span class="vc-index">III</span>
+<p class="vc-name">Culture &amp; AI Diplomacy</p>
+<p class="vc-body">AtelierX — a Sovereign Media Platform and Cultural Foundry producing cinematic films and global cultural narratives. Human Capital, Culture Diplomacy, Cinematic Film — constructing the narrative architecture of the next era.</p>
+</div>
+</div>
+<div class="vertical-card reveal">
+<div class="vc-img">
+<img alt="Green Transport" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/38ecc5caa9a99a810a30a14e9dc29d6e.png">
+</div>
+<div class="vc-content">
+<span class="vc-index">IV</span>
+<p class="vc-name">Green Transport &amp; Trade</p>
+<p class="vc-body">The physical frameworks enabling regional and sovereign transition — green transport corridors, rail, smart mobility, ports, maritime logistics, and the infrastructure of a decarbonised future.</p>
+</div>
+</div>
+<div class="vertical-card reveal" style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr;">
+<div class="vc-img" style="aspect-ratio: unset; min-height: 220px;">
+<div class="vc-placeholder" style="min-height:220px;">
+<span class="vc-glyph" style="font-size:96px;opacity:0.1;">₿</span>
+</div>
+</div>
+<div class="vc-content" style="display:flex;flex-direction:column;justify-content:center;">
+<span class="vc-index">V</span>
+<p class="vc-name">Sovereign Fintech &amp; Digital Finance</p>
+<p class="vc-body">Financial architecture for sovereign transitions — green bonds, carbon credit markets, digital asset infrastructure, and fintech corridors enabling nations to mobilise capital at the speed of transformation. Blockchain systems, real-world operational data, urban intelligence, cross-ministerial coordination.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<hr class="rule">
+<!-- PAST PROJECTS -->
+<section id="projects">
+<div class="projects-header reveal">
+<div>
+<p class="section-tag" data-num="03">Track Record</p>
+<h2>Past projects</h2>
+</div>
+<p style="font-size:13px;color:var(--muted);max-width:320px;line-height:1.7;">Almost two decades of delivered infrastructure across Europe, the GCC, and beyond.</p>
+</div>
+<div class="projects-list">
+<div class="project-entry reveal">
+<span class="project-index">01 · Westfield Shepherds Bush, London</span>
+<p class="project-name">Westfield, Phase 2</p>
+<p class="project-body">Seventy new retail units including a large John Lewis anchor store. A complex steel frame using 15,000 tonnes of steel, spanning the roads and Central line infrastructure with heavy plate girders, trusses, and hanging structures.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">02 · Yas Island, Abu Dhabi</span>
+<p class="project-name">Ferrari World Abu Dhabi</p>
+<p class="project-body">Masterplanning, urban design, landscape design, and architecture. 176,000m² with Aldar Properties. A cultural landmark — the first Ferrari Theme Park, requiring a bold creative vision while paying homage to the iconic brand.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">03 · Segrate, Milan</span>
+<p class="project-name">Westfield Milan</p>
+<p class="project-body">The largest new shopping centre in Europe on a 60-hectare site. Approximately 380 stores, a luxury village, leisure, entertainment, dining, 10,000 parking spaces, and the latest in digital technology and personalised shopping.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">04 · Knightsbridge, London</span>
+<p class="project-name">The Mandarin Oriental</p>
+<p class="project-body">Vinci Construction management team through Arc Atelier Group delivering this prestigious 200-bedroom landmark luxury hotel — a beacon in Knightsbridge that redefined the city's hospitality landscape.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">05 · Palm Jumeirah, Dubai</span>
+<p class="project-name">St Regis The Palm</p>
+<p class="project-body">The hotel occupies the first 18 floors of Palm Tower at the heart of Palm Jumeirah, with stunning views of the Dubai Canal. Adjacent to the Palm Monorail, minutes from Aquaventure and The Pointe's waterfront dining.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">06 · Mushaireb, Doha</span>
+<p class="project-name">Banyan Tree Doha</p>
+<p class="project-body">Five-star luxury property designed by renowned interior designer Jacques Garcia, opened May 2021. The first property managed under the Banyan Tree–Accor strategic alliance, anchoring the cultural heart of Doha.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">07 · Downtown Dubai</span>
+<p class="project-name">St Regis Financial Road — The Residences</p>
+<p class="project-body">A 60-story tower with stunning views of Burj Khalifa and the Dubai Canal. 232 units from 1 to 5 bedrooms. Inspired by traditional areesh houses, ghaf trees, falaj systems, pearl diving, and Arabian coffee — rooted in UAE heritage.</p>
+</div>
+<div class="project-entry reveal">
+<span class="project-index">08 · Deira, Dubai</span>
+<p class="project-name">Jewel of the Creek</p>
+<p class="project-body">One million sqm mixed-use development at the north shore of Dubai Creek. A strategic location transforming Port Saeed into a vibrant urban centre — incorporating residential, commercial, hospitality, and recreational uses.</p>
+</div>
+</div>
+</section>
+<hr class="rule">
+<!-- AUTHORSHIP: GYS TRILOGY -->
+<section id="authorship">
+<div class="authorship-inner">
+<div class="authorship-label-col">
+<div class="reveal">
+<p class="section-tag" data-num="04">Authorship</p>
+<p class="authorship-tagline">The GYS Trilogy</p>
+</div>
+<p class="authorship-body reveal">
+        The GYS Trilogy maps the unseen architecture of human potential — decoding the genetic, energetic, and soul-driven design that builds futures of purpose, integrity, and sacred intelligence.
+      </p>
+</div>
+<div class="books-grid">
+<div class="book-card reveal">
+<div class="book-placeholder">
+<span class="book-glyph">G</span>
+</div>
+<div class="book-content">
+<span class="book-date">1st of July 2026</span>
+<p class="book-title">Volume I</p>
+</div>
+</div>
+<div class="book-card reveal">
+<div class="book-placeholder">
+<span class="book-glyph">Y</span>
+</div>
+<div class="book-content">
+<span class="book-date">8th of March 2027</span>
+<p class="book-title">Volume II</p>
+</div>
+</div>
+<div class="book-card reveal">
+<div class="book-placeholder">
+<span class="book-glyph">S</span>
+</div>
+<div class="book-content">
+<span class="book-date">21st of June 2027</span>
+<p class="book-title">Volume III</p>
+</div>
+</div>
+<div class="book-card reveal">
+<div class="book-placeholder">
+<span class="book-glyph">∞</span>
+</div>
+<div class="book-content">
+<span class="book-date">8th of August 2027</span>
+<p class="book-title">Synthesis</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<hr class="rule">
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<div class="testi-header reveal">
+<p class="testi-tag">Perspectives</p>
+<div class="testi-controls">
+<button aria-label="Previous" class="testi-btn" id="testi-prev">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 14 14"><path d="M9 1L3 7l6 6"></path></svg>
+</button>
+<button aria-label="Next" class="testi-btn" id="testi-next">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"></path></svg>
+</button>
+</div>
+</div>
+<div class="testi-track-wrap">
+<div class="testi-track" id="testi-track" style="transform: translateX(-100%);">
+<div class="testi-slide">
+<div class="testi-meta reveal">
+<p class="testi-name">H.E. Rashid Al Mansoori</p>
+<p class="testi-role">Minister of State<br>for Future Infrastructure</p>
+<div class="testi-divider"></div>
+<p class="testi-org">Sultanate of Oman</p>
+</div>
+<blockquote class="testi-quote reveal">
+          What distinguished AetherSovereign was not their ambition — ambition is common. It was their patience with complexity. They sat with us through every constraint, every cultural consideration, and emerged with a framework that felt genuinely ours.
+        </blockquote>
+</div>
+<div class="testi-slide">
+<div class="testi-meta reveal">
+<p class="testi-name">Dr. Layla Bint Khalid</p>
+<p class="testi-role">Director General<br>National Water Strategy</p>
+<div class="testi-divider"></div>
+<p class="testi-org">Kingdom of Saudi Arabia</p>
+</div>
+<blockquote class="testi-quote reveal">
+          The Nabdh al Ma'a platform transformed how our ministry sees itself. We no longer manage data — we hold a mirror to the nation's pulse. That shift in thinking, from administration to stewardship, came entirely from their work.
+        </blockquote>
+</div>
+<div class="testi-slide">
+<div class="testi-meta reveal">
+<p class="testi-name">Tariq Bin Essa Al Falasi</p>
+<p class="testi-role">Chairman<br>Gulf Maritime Futures Council</p>
+<div class="testi-divider"></div>
+<p class="testi-org">United Arab Emirates</p>
+</div>
+<blockquote class="testi-quote reveal">
+          In twenty years of working across sovereign infrastructure, I have rarely encountered a team that holds both the technical rigour and the cultural sensitivity that this work demands. AetherSovereign is an exception in every sense.
+        </blockquote>
+</div>
+<div class="testi-slide">
+<div class="testi-meta reveal">
+<p class="testi-name">Amina Osei-Mensah</p>
+<p class="testi-role">Chief Sustainability Officer<br>Pan-African Energy Compact</p>
+<div class="testi-divider"></div>
+<p class="testi-org">Accra · Nairobi · Dubai</p>
+</div>
+<blockquote class="testi-quote reveal">
+          They never imposed a model — they built one alongside us. The HydroGENE deployment required an entirely new kind of thinking about energy sovereignty, and they delivered it with a quietness I can only describe as confidence without ego.
+        </blockquote>
+</div>
+</div>
+</div>
+<div class="testi-dots" id="testi-dots">
+<div class="testi-dot" data-idx="0"></div>
+<div class="testi-dot active" data-idx="1"></div>
+<div class="testi-dot" data-idx="2"></div>
+<div class="testi-dot" data-idx="3"></div>
+</div>
+</section>
+<!-- PRESENCE -->
+<section id="presence">
+<canvas class="presence-bg-canvas" id="presence-canvas" width="1280" height="560"></canvas>
+<div class="presence-overlay"></div>
+<div class="presence-content">
+<p class="presence-tag">Presence</p>
+<div class="presence-locations">
+<div class="location-item reveal">
+<p class="loc-country">UAE</p>
+<p class="loc-city">Dubai</p>
+</div>
+<div class="location-item reveal">
+<p class="loc-country">The Sultanate of Oman</p>
+<p class="loc-city">Muscat</p>
+</div>
+<div class="location-item reveal">
+<p class="loc-country">The Kingdom of Saudi Arabia</p>
+<p class="loc-city">Riyadh</p>
+</div>
+<div class="location-item reveal">
+<p class="loc-country">United Kingdom</p>
+<p class="loc-city">London</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SANCTUARY: SANTINE -->
+<section id="sanctuary">
+<video aria-hidden="true" autoplay="" id="sanctuary-video" loop="" muted="" playsinline="" preload="metadata" src="https://altairvega.co/_assets/video/82f767a6461ae46ea0dd01bb0ee0d798.mp4">
+</video>
+<div class="sanctuary-overlay"></div>
+<div class="sanctuary-content">
+<p class="sanctuary-label">Health &amp; Longevity</p>
+<h2 class="sanctuary-title">Santine</h2>
+<p class="sanctuary-body">An exclusive sanctuary harmoniously integrating science, spirituality, and sustainability. Where longevity science, CRISPR precision, and conscious living come together — not an escape, but a homecoming to the fullest expression of life. A Health &amp; Wellness Members Club designed for those who lead nations.</p>
+</div>
+</section>
+<!-- CULTURE: ATELIER X -->
+<section id="culture">
+<div class="culture-inner">
+<div class="culture-image">
+<div class="culture-placeholder">
+<span class="culture-wordmark-bg">Atelier<br>X</span>
+</div>
+</div>
+<div class="culture-text">
+<p class="ct-label">Culture &amp; Narrative</p>
+<h2 class="ct-title">AtelierX</h2>
+<p class="ct-body">A Sovereign Media Platform and Cultural Foundry that produces cinematic films and global cultural narratives. Constructing Luxury — our cinematic mirror — profiles the architects of nuance, elegance, and the unspoken resilience of what luxury truly means. Media, Culture &amp; Tech, developed as exportable national IP.</p>
+<p class="ct-sub">Cultural Platforms &amp; Narrative Architecture — with Gemma M</p>
+</div>
+</div>
+</section>
+<!-- PRESS -->
+<section id="press">
+<div class="press-inner">
+<div class="reveal">
+<p class="section-tag" data-num="">In the Press</p>
+<h2>Perspectives on our work</h2>
+</div>
+<div class="press-grid">
+<a class="press-card reveal" href="https://www.constructionweekonline.com/business/article-24948-face-to-face-mark-rudman-faithfulgould" rel="noopener" target="_blank">
+<span class="press-pub">Construction Week</span>
+<p class="press-quote">On the challenges of authority and responsibility — 'Take Ashghal: a programme of work worth more than $100bn.'</p>
+<p class="press-attr">Chief Development Director<br>Mark Rudman</p>
+</a>
+<a class="press-card reveal" href="https://www.cbnme.com/analysis/qatar-beyond-2022/" rel="noopener" target="_blank">
+<span class="press-pub">Construction Business ME</span>
+<p class="press-quote">On Qatar and looking beyond the stadiums — 'The industry is alive with record-breaking infrastructure projects.'</p>
+<p class="press-attr">Chief Development Director<br>Mark Rudman</p>
+</a>
+<a class="press-card reveal" href="https://www.benoy.com/design-insights/aidah-dheban-on-the-shifting-design-trends-in-the-middle-east/" rel="noopener" target="_blank">
+<span class="press-pub">Benoy</span>
+<p class="press-quote">On Shifting Design Trends in the Middle East — reframing what contemporary architecture means for the Gulf.</p>
+<p class="press-attr">Managing Director<br>Aidah Dheban</p>
+</a>
+</div>
+</div>
+</section>
+<hr class="rule">
+
+<section class="contact-system" id="contact">
+<div class="container">
+<div class="contact-header reveal">
+<p class="section-tag" data-num="06">Contact</p>
+<h2>Begin an institutional conversation.</h2>
+<p class="contact-lede">For sovereign infrastructure, decarbonization, digital asset architecture, longevity medicine frameworks, Joint Ventures and confidential advisory mandates.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-card reveal">
+<span class="contact-label">Email</span>
+<a class="contact-main" href="mailto:management@aethersovereign.ae?subject=AetherSovereign%20Mandate%20Enquiry">management@aethersovereign.ae</a>
+<p>Preferred channel for mandate briefs, institutional documentation and formal introductions.</p>
+</div>
+<div class="contact-card reveal">
+<span class="contact-label">WhatsApp / Phone</span>
+<a class="contact-main" href="https://wa.me/971558574997?text=Hello%20AetherSovereign%2C%20I%20would%20like%20to%20discuss%20a%20sovereign%20infrastructure%20mandate." rel="noopener" target="_blank">+971 55 857 4997</a>
+<p><a href="tel:+971558574997">Call directly</a> or open a confidential WhatsApp introduction.</p>
+</div>
+<div class="contact-card reveal">
+<span class="contact-label">Address</span>
+<address>Al Barsha 3<br>316 Rd<br>Dubai, Dubai, 0000<br>United Arab Emirates</address>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Al%20Barsha%203%20316%20Rd%20Dubai%20United%20Arab%20Emirates" rel="noopener" target="_blank">Open map</a></p>
+</div>
+</div>
+<form class="mandate-form reveal" id="mandate-form">
+<div class="form-row">
+<label>Name<input autocomplete="name" name="name" placeholder="Your name" required=""></label>
+<label>Organization<input autocomplete="organization" name="organization" placeholder="Institution / company"></label>
+</div>
+<div class="form-row">
+<label>Email<input autocomplete="email" name="email" placeholder="name@example.com" required="" type="email"></label>
+<label>Phone<input autocomplete="tel" name="phone" placeholder="+971 ..."></label>
+</div>
+<label>Mandate brief<textarea name="message" placeholder="Tell us about the mandate, geography, timeline and strategic objective." required="" rows="5"></textarea></label>
+<div class="form-actions">
+<button type="submit">Prepare email</button>
+<a href="https://wa.me/971558574997?text=Hello%20AetherSovereign%2C%20I%20would%20like%20to%20discuss%20a%20sovereign%20infrastructure%20mandate." rel="noopener" target="_blank">Continue on WhatsApp</a>
+</div>
+<p class="form-note">This static form opens a pre-filled email in your mail app. No personal data is stored by this page unless you choose to send it.</p>
+</form>
+</div>
+</section>
+
+<section class="legal-section" id="terms">
+<div class="container">
+<div class="legal-header reveal">
+<p class="section-tag" data-num="07">Terms &amp; Conditions</p>
+<h2>Website terms of use.</h2>
+<p class="legal-updated">Last updated: 18 May 2026</p>
+</div>
+<div class="legal-grid">
+<article class="legal-block reveal">
+<h3>1. About this website</h3>
+<p>This website is operated for AetherSovereign, a strategic advisory and infrastructure ecosystem platform contactable at <a href="mailto:management@aethersovereign.ae">management@aethersovereign.ae</a>. By accessing this website, you agree to use it only for lawful, professional and non-disruptive purposes.</p>
+</article>
+<article class="legal-block reveal">
+<h3>2. No offer, solicitation or regulated advice</h3>
+<p>Information on this website is provided for general institutional awareness only. It is not an offer, solicitation, prospectus, medical advice, financial advice, investment advice, legal advice, securities promotion, digital-asset recommendation or commitment to enter any transaction.</p>
+</article>
+<article class="legal-block reveal">
+<h3>3. Medical and longevity content</h3>
+<p>Longevity medicine, regenerative systems and biological-data references are strategic and infrastructural in nature. They do not replace diagnosis, treatment or advice from licensed healthcare professionals, regulators or approved clinical governance bodies.</p>
+</article>
+<article class="legal-block reveal">
+<h3>4. Digital assets and financial systems</h3>
+<p>References to decentralized digital assets, blockchain infrastructure, carbon markets, green bonds or fintech corridors are conceptual and strategic. Nothing on this website authorizes, recommends or markets any token, security, investment product or financial instrument.</p>
+</article>
+<article class="legal-block reveal">
+<h3>5. Intellectual property</h3>
+<p>All names, concepts, copy, frameworks, visuals, structures, design elements, methods and technical documentation made available through this website are protected by applicable copyright, trademark, confidentiality, trade-secret and intellectual-property laws. No content may be copied, adapted, scraped, reverse-engineered or commercially used without written permission.</p>
+</article>
+<article class="legal-block reveal">
+<h3>6. Confidentiality and submissions</h3>
+<p>Do not submit confidential, classified, sensitive medical, financial or proprietary information through the website unless a written confidentiality framework has been executed. Contact submissions are treated with professional care but do not create an advisory, fiduciary, medical, legal, investment or Joint Venture relationship.</p>
+</article>
+<article class="legal-block reveal">
+<h3>7. Joint Ventures and mandates</h3>
+<p>Any Joint Venture, institutional mandate, technical deployment, licensing, data-sharing arrangement or advisory engagement is subject to separate due diligence, written agreements, regulatory review, governance approvals and conflict-of-interest checks.</p>
+</article>
+<article class="legal-block reveal">
+<h3>8. Third-party links and media</h3>
+<p>This website may reference or display third-party media, external links, embedded assets, partner names, public agendas or industry materials. AetherSovereign is not responsible for third-party availability, accuracy, security, policies or representations.</p>
+</article>
+<article class="legal-block reveal">
+<h3>9. Limitation of liability</h3>
+<p>To the fullest extent permitted by law, AetherSovereign is not liable for losses arising from use of, reliance on, inability to access, or technical issues connected to this website or its content.</p>
+</article>
+<article class="legal-block reveal">
+<h3>10. Governing law and contact</h3>
+<p>These terms are intended to be governed by the applicable laws of the United Arab Emirates and the competent courts of Dubai, unless a separate written agreement states otherwise. Contact: <a href="mailto:management@aethersovereign.ae">management@aethersovereign.ae</a>, <a href="tel:+971558574997">+971 55 857 4997</a>, Al Barsha 3, 316 Rd, Dubai, Dubai, 0000, United Arab Emirates.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="legal-section privacy-section" id="privacy">
+<div class="container">
+<div class="legal-header reveal">
+<p class="section-tag" data-num="08">Privacy Notice</p>
+<h2>Data handling principles.</h2>
+</div>
+<div class="legal-grid compact">
+<article class="legal-block reveal">
+<h3>Data collected</h3>
+<p>If you contact AetherSovereign, we may receive your name, organization, email, phone number, message content and any information you choose to provide.</p>
+</article>
+<article class="legal-block reveal">
+<h3>Purpose</h3>
+<p>Data is used to respond to enquiries, assess mandate fit, coordinate meetings, maintain professional records and perform compliance or conflict checks where required.</p>
+</article>
+<article class="legal-block reveal">
+<h3>Security</h3>
+<p>The website itself does not store form submissions. Email and WhatsApp communications are handled through the respective user-selected applications and providers.</p>
+</article>
+<article class="legal-block reveal">
+<h3>Your requests</h3>
+<p>For access, correction, deletion, restriction or other privacy requests, contact <a href="mailto:management@aethersovereign.ae">management@aethersovereign.ae</a>.</p>
+</article>
+</div>
+</div>
+</section>
+<footer id="site-footer">
+<div class="footer-inner">
+<div class="footer-left">
+<a class="wordmark" href="file:///Users/keifferjapeth/Downloads/aethersovereign_full_site.html#hero">Aether<span class="wordmark-sep"></span>Sovereign</a>
+<p>Sovereign infrastructure ecosystems.<br>Zero-emission industry. Digital assets.<br>Institutional longevity medicine.</p>
+</div>
+<div class="footer-right">
+<a class="contact-link" href="mailto:management@aethersovereign.ae">management@aethersovereign.ae</a>
+<a class="footer-tel" href="tel:+971558574997">+971 55 857 4997</a>
+<p class="footer-copy">© 2026 AetherSovereign. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+
+// ── MOBILE NAVIGATION / ACCESSIBILITY ────────────────────────────────────────
+(function() {
+  const nav = document.getElementById('nav');
+  const toggle = nav ? nav.querySelector('.nav-toggle') : null;
+  const menu = document.getElementById('nav-menu');
+  if (!nav || !toggle || !menu) return;
+
+  function setOpen(open) {
+    nav.classList.toggle('nav-open', open);
+    document.body.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  }
+
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('nav-open')));
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') setOpen(false);
+  });
+})();
+
+// ── FLUID SCROLL COLOUR SYSTEM ───────────────────────────────────────────────
+const STATES = [
+  // 0  hero / affiliations / bio (warm paper)
+  { bg: [242, 237, 228], fg: [12, 11, 9],    accent: [180, 154, 110] },
+  // 1  portfolio / serve / framework (slightly deeper warm)
+  { bg: [236, 230, 218], fg: [18, 16, 12],   accent: [167, 138,  94] },
+  // 2  gene-philosophy / verticals (warmer mid)
+  { bg: [228, 221, 207], fg: [22, 19, 14],   accent: [160, 130,  88] },
+  // 3  projects / authorship (light ash warm)
+  { bg: [220, 213, 198], fg: [26, 22, 16],   accent: [152, 124,  82] },
+  // 4  testimonials (warm mid-dark flip)
+  { bg: [68,  58,  44],  fg: [236, 228, 212], accent: [196, 166, 118] },
+  // 5  presence (deeper warm dark)
+  { bg: [52,  44,  33],  fg: [238, 230, 215], accent: [190, 160, 112] },
+  // 6  sanctuary (warm dark)
+  { bg: [44,  37,  27],  fg: [240, 232, 218], accent: [184, 154, 106] },
+  // 7  culture / press (transition warm mid)
+  { bg: [60,  52,  40],  fg: [236, 228, 212], accent: [188, 160, 112] },
+  // 8  footer (back to paper)
+  { bg: [242, 237, 228], fg: [12, 11, 9],    accent: [180, 154, 110] },
+];
+
+const SECTION_STATES = {
+  hero:          0,
+  pillars:       1,
+  compliance:    1,
+  bio:           0,
+  portfolio:     1,
+  serve:         1,
+  framework:     1,
+  'gene-philosophy': 2,
+  verticals:     2,
+  projects:      3,
+  authorship:    3,
+  testimonials:  4,
+  presence:      5,
+  sanctuary:     6,
+  culture:       7,
+  press:         7,
+  contact:       8,
+  terms:         8,
+  privacy:       8,
+  'site-footer': 8,
+};
+const SECTION_IDS = ['hero','pillars','compliance','bio','portfolio','serve','framework','gene-philosophy','verticals','projects','authorship','testimonials','presence','sanctuary','culture','press','contact','terms','privacy','site-footer'];
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+const root = document.documentElement;
+
+function applyColors(bg, fg, ac) {
+  root.style.setProperty('--bg-r', Math.round(bg[0]));
+  root.style.setProperty('--bg-g', Math.round(bg[1]));
+  root.style.setProperty('--bg-b', Math.round(bg[2]));
+  root.style.setProperty('--fg-r', Math.round(fg[0]));
+  root.style.setProperty('--fg-g', Math.round(fg[1]));
+  root.style.setProperty('--fg-b', Math.round(fg[2]));
+  root.style.setProperty('--accent-r', Math.round(ac[0]));
+  root.style.setProperty('--accent-g', Math.round(ac[1]));
+  root.style.setProperty('--accent-b', Math.round(ac[2]));
+  const overlay = document.getElementById('hero-overlay');
+  if (overlay) overlay.style.background = `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 35%, rgba(0,0,0,0.45) 75%, rgb(${Math.round(bg[0])},${Math.round(bg[1])},${Math.round(bg[2])}) 100%)`;
+}
+
+function getScrollState() {
+  const vh = window.innerHeight;
+  const trigger = vh * 0.4;
+  const sections = SECTION_IDS.map(id => {
+    const el = document.getElementById(id);
+    if (!el) return null;
+    const rect = el.getBoundingClientRect();
+    return { id, top: rect.top, bottom: rect.bottom };
+  }).filter(Boolean);
+
+  let fromIdx = 0, toIdx = 1, t = 0;
+  for (let i = 0; i < sections.length; i++) {
+    const s = sections[i];
+    const sNext = sections[i + 1];
+    if (!sNext) { fromIdx = SECTION_STATES[s.id]; toIdx = fromIdx; t = 0; break; }
+    const from = s.top, to = sNext.top;
+    if (from <= trigger && to > trigger) {
+      fromIdx = SECTION_STATES[s.id]; toIdx = SECTION_STATES[sNext.id];
+      t = clamp((trigger - from) / (to - from), 0, 1);
+      t = t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+      break;
+    }
+    if (i === sections.length - 2 && sNext.top <= trigger) { fromIdx = SECTION_STATES[sNext.id]; toIdx = fromIdx; t = 0; }
+  }
+  return { fromIdx, toIdx, t };
+}
+
+function tick() {
+  const { fromIdx, toIdx, t } = getScrollState();
+  const A = STATES[fromIdx], B = STATES[toIdx];
+  const bg = [lerp(A.bg[0],B.bg[0],t), lerp(A.bg[1],B.bg[1],t), lerp(A.bg[2],B.bg[2],t)];
+  const fg = [lerp(A.fg[0],B.fg[0],t), lerp(A.fg[1],B.fg[1],t), lerp(A.fg[2],B.fg[2],t)];
+  const ac = [lerp(A.accent[0],B.accent[0],t), lerp(A.accent[1],B.accent[1],t), lerp(A.accent[2],B.accent[2],t)];
+  applyColors(bg, fg, ac);
+  const sp = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  root.style.setProperty('--orb-x', `${50 + Math.sin(sp * Math.PI * 2) * 20}%`);
+  root.style.setProperty('--orb-y', `${20 + sp * 60}%`);
+}
+
+let rafPending = false;
+function onScroll() {
+  if (rafPending) return;
+  rafPending = true;
+  requestAnimationFrame(() => { tick(); rafPending = false; });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+tick();
+
+// ── SCROLL REVEALS ────────────────────────────────────────────────────────────
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 90);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(el => io.observe(el));
+
+// ── TESTIMONIALS CAROUSEL ─────────────────────────────────────────────────────
+(function() {
+  const track = document.getElementById('testi-track');
+  const dots  = document.querySelectorAll('.testi-dot');
+  const prev  = document.getElementById('testi-prev');
+  const next  = document.getElementById('testi-next');
+  const total = document.querySelectorAll('.testi-slide').length;
+  let cur = 0, timer;
+  function go(idx) {
+    cur = (idx + total) % total;
+    track.style.transform = `translateX(-${cur * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+  }
+  function autoplay() { timer = setInterval(() => go(cur + 1), 6000); }
+  function reset() { clearInterval(timer); autoplay(); }
+  prev.addEventListener('click', () => { go(cur - 1); reset(); });
+  next.addEventListener('click', () => { go(cur + 1); reset(); });
+  dots.forEach(d => d.addEventListener('click', () => { go(+d.dataset.idx); reset(); }));
+  autoplay();
+})();
+
+// ── PRESENCE CANVAS ───────────────────────────────────────────────────────────
+(function() {
+  const canvas = document.getElementById('presence-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; draw(); }
+  function draw() {
+    const w = canvas.width, h = canvas.height;
+    ctx.clearRect(0, 0, w, h);
+    const bg = ctx.createLinearGradient(0, 0, w, h);
+    bg.addColorStop(0, '#0D1117'); bg.addColorStop(0.4, '#111820'); bg.addColorStop(1, '#0A0E13');
+    ctx.fillStyle = bg; ctx.fillRect(0, 0, w, h);
+    const glow = ctx.createRadialGradient(w*0.5, h*0.42, 0, w*0.5, h*0.42, w*0.55);
+    glow.addColorStop(0, 'rgba(180,154,110,0.12)'); glow.addColorStop(0.5, 'rgba(140,110,70,0.05)'); glow.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = glow; ctx.fillRect(0, 0, w, h);
+    ctx.beginPath(); ctx.moveTo(0, h*0.44); ctx.lineTo(w, h*0.44);
+    ctx.strokeStyle = 'rgba(180,154,110,0.06)'; ctx.lineWidth = 0.5; ctx.stroke();
+    ctx.strokeStyle = 'rgba(255,250,235,0.025)'; ctx.lineWidth = 0.5;
+    for (let x = 0; x <= w; x += w/8) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,h); ctx.stroke(); }
+    for (let y = 0; y <= h; y += h/6) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(w,y); ctx.stroke(); }
+  }
+  window.addEventListener('resize', resize);
+  resize();
+})();
+
+
+// ── CONTACT FORM MAILTO HANDLER ─────────────────────────────────────────────
+(function() {
+  const form = document.getElementById('mandate-form');
+  if (!form) return;
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const data = new FormData(form);
+    const body = [
+      'Name: ' + (data.get('name') || ''),
+      'Organization: ' + (data.get('organization') || ''),
+      'Email: ' + (data.get('email') || ''),
+      'Phone: ' + (data.get('phone') || ''),
+      '',
+      'Mandate brief:',
+      (data.get('message') || '')
+    ].join('\n');
+    const subject = encodeURIComponent('AetherSovereign mandate enquiry');
+    window.location.href = 'mailto:management@aethersovereign.ae?subject=' + subject + '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.nav-links{display:flex!important}</style></noscript>
+
+
+</body></html>
