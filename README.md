@@ -46,17 +46,20 @@ Shapi
 
 Founder & Chair — Aether Sovereign
 
-A British-Omani professional with a diverse career across Europe, the GCC, and Oman. I merge design, technology, and strategic economic execution to create significant impact. My work focuses on urban development, national infrastructure, and cultural innovation — bridging private innovation with public governance.
+A Spanish professional with a distinguished career spanning Europe, the GCC, the US, and the UK, I merge longevity, regenerative medicine, technology, decarbonized structures, and strategic economic execution to drive systemic impact. My work focuses on urban development, national infrastructure, and cultural and health systems innovation — successfully bridging private breakthroughs with public governance.
 
-I engage in projects related to smart mobility, green energy, maritime logistics, digital infrastructure, and cultural ecosystems, aiming for holistic solutions that benefit people and nations. Our strategy emphasises long-term vision, actionable insights, and collaboration with sovereign entities, private investors, and global innovators.
+I architect holistic solutions across smart mobility, green energy, smart hospitals, proptech, maritime logistics, digital infrastructure, and cultural ecosystems to elevate both communities and nations. Our strategy emphasizes long-term vision, actionable insights, and high-level collaboration with sovereign entities, private investors, and global innovators to foster sustainable growth and regional leadership.
 
-For almost two decades I architected the future in concrete and steel, transforming skylines across the world. A personal reckoning shifted my focus from the buildings we inhabit to the life we cultivate within them. From this emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+Grounded in my background as a former vocalist and performing artist, as well as a holistic strategist, I bring transformation to both people and spaces. My trajectory shapes world-class destinations at the intersection of urban design, luxury, and global infrastructure for a healthier, more vibrant existence. The vessels we inhabit—both our bodies and our buildings—are equally vital.
 
-We don't just imagine sovereign futures.
-We architect systems that breathe, adapt, and thrive.
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
 
-Zoe Shapi, Founder & Chair of Aether Sovereign
-Zoe Shapi · Founder & Chair
+My mission is to build not just with vision, but with vitality. From this philosophy emerged GENE — a living framework born from a radical insight: that the human body holds an intelligent blueprint for resilience, renewal, and purpose.
+
+We don't just imagine sovereign futures. We architect systems that breathe, adapt, and thrive.
+
+Gemma M, Founder & Chair of Aether Sovereign
+Gemma M · Founder & Chair
 
 Oman National & Regional Portfolio
 
@@ -319,7 +322,7 @@ Benoy ↗
 On shifting design trends in the Middle East — reframing what contemporary architecture means for the Gulf region.
 
 Managing Director
-Aidah Dheban
+Ray M
 
 Aether
 Sovereign
@@ -334,6 +337,8 @@ Verticals
 Projects
 Authorship
 Contact
-contact@aethersovereign.co
+management@aethersovereign.co
 aethersovereign.co ↗
 © 2026 Aether Sovereign. All rights reserved.
+
+
