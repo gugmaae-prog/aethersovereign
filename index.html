@@ -2066,7 +2066,7 @@ A Spanish professional with a distinguished career spanning Europe, the GCC, the
 </div>
 </div>
 <div class="fw-image reveal visible">
-<img alt="Green infrastructure" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/0a916806b298831b5ab499cf905e547b.png" style="min-height:420px;">
+<img alt="Green infrastructure" class="img-harmonized" decoding="async" loading="lazy" src="_assets/media/0a916806b298831b5ab499cf905e547b.png" style="min-height:420px;">
 </div>
 </div>
 </section>
@@ -2104,7 +2104,7 @@ A Spanish professional with a distinguished career spanning Europe, the GCC, the
 <div class="verticals-grid">
 <div class="vertical-card reveal">
 <div class="vc-img">
-<img alt="Health and Longevity" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/b75f4b52d433deb34d7b0082c3cd9b41.png">
+<img alt="Health and Longevity" class="img-harmonized" decoding="async" loading="lazy" src="_assets/media/b75f4b52d433deb34d7b0082c3cd9b41.png">
 </div>
 <div class="vc-content">
 <span class="vc-index">I</span>
@@ -2114,7 +2114,7 @@ A Spanish professional with a distinguished career spanning Europe, the GCC, the
 </div>
 <div class="vertical-card reveal">
 <div class="vc-img">
-<img alt="Ocean Energy" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/654fab3817d0f7cea6a1d5d0f1ac1bcc.png">
+<img alt="Ocean Energy" class="img-harmonized" decoding="async" loading="lazy" src="_assets/media/a94ec11979acfee6c652e0cbd351ae80.png">
 </div>
 <div class="vc-content">
 <span class="vc-index">II</span>
@@ -2124,7 +2124,7 @@ A Spanish professional with a distinguished career spanning Europe, the GCC, the
 </div>
 <div class="vertical-card reveal">
 <div class="vc-img">
-<img alt="Culture and Diplomacy" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/346f7ec8ed973cf0a2c469b051c043b7.jpg">
+<img alt="Culture and Diplomacy" class="img-harmonized" decoding="async" loading="lazy" src="_assets/media/346f7ec8ed973cf0a2c469b051c043b7.jpg">
 </div>
 <div class="vc-content">
 <span class="vc-index">III</span>
@@ -2134,7 +2134,7 @@ A Spanish professional with a distinguished career spanning Europe, the GCC, the
 </div>
 <div class="vertical-card reveal">
 <div class="vc-img">
-<img alt="Green Transport" class="img-harmonized" decoding="async" loading="lazy" src="./AetherSovereign · Sovereign Infrastructure Ecosystems_files/38ecc5caa9a99a810a30a14e9dc29d6e.png">
+<img alt="Green Transport" class="img-harmonized" decoding="async" loading="lazy" src="_assets/media/c7a24e17da32ef99539656c2b3b38f5b.png">
 </div>
 <div class="vc-content">
 <span class="vc-index">IV</span>
@@ -2742,6 +2742,37 @@ reveals.forEach(el => io.observe(el));
   resize();
 })();
 
+
+
+// ── MEDIA/ROUTE INTEGRITY + BUTTERY INTERACTIONS ───────────────────────────
+(function() {
+  document.querySelectorAll('img').forEach((img) => {
+    img.classList.add('gpu-smooth');
+    img.addEventListener('error', function() {
+      this.style.background = 'rgba(var(--fg-r),var(--fg-g),var(--fg-b),0.06)';
+      this.style.minHeight = this.style.minHeight || '240px';
+      this.removeAttribute('src');
+    }, { once: true });
+  });
+
+  document.querySelectorAll('video').forEach((video) => {
+    video.classList.add('gpu-smooth');
+    video.addEventListener('error', function() {
+      this.style.display = 'none';
+    }, { once: true });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      const target = id && id.length > 1 ? document.querySelector(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', id);
+    });
+  });
+})();
 
 // ── BIO PROFILE TOGGLE ──────────────────────────────────────────────────────
 (function() {
